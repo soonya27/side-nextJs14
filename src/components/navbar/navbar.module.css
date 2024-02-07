@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.util {
+    display: flex;
+}
