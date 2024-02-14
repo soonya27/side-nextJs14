@@ -14,9 +14,9 @@ export default function Navbar() {
         <li><Link href="/community">인테리어 이야기</Link></li>
       </ul>
       <ul className={styles.util}>
-        <li><Link href="">찾기</Link></li>
+        <li><button type="button">찾기</button></li>
         <li><Link href="/join">회원가입</Link></li>
-        <li><Link href="">로그인</Link></li>
+        <li><Link href="/login">로그인</Link></li>
       </ul>
 
     </header>
