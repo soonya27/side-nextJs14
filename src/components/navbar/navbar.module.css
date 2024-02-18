@@ -8,6 +8,10 @@
     flex: 1 1 auto;
 }
 
+.navbarClicked a {
+    color: orange;
+}
+
 .util {
     display: flex;
 }
