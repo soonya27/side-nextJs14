@@ -12,6 +12,7 @@ const navList = [
 
 export default function Navbar() {
   const pathname = usePathname();
+
   return (
     <header className={styles.header}>
       <h1>
@@ -20,7 +21,7 @@ export default function Navbar() {
       <ul className={styles.navbar}>
         {
           navList.map(({ text, href }) => (
-            <li className={`${pathname === href && styles.navbarClicked}`}>
+            <li key={text} className={`${pathname === href && styles.navbarClicked}`}>
               <Link href={href}>{text}</Link>
             </li>
           ))
@@ -29,7 +30,8 @@ export default function Navbar() {
       <ul className={styles.util}>
         <li><button type="button">찾기</button></li>
         <li><Link href="/join">회원가입</Link></li>
-        <li><Link href="/login">로그인</Link></li>
+        {/* {!user && <li><Link href="/login">로그인</Link></li>}
+        {user && <li onClick={logout}>로그아웃</li>} */}
       </ul>
 
     </header>

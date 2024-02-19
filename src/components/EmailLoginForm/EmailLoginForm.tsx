@@ -25,7 +25,10 @@ export default function EmailLoginForm() {
         formState: { errors, isSubmitting, isDirty, isValid },
     } = useForm<FormData>({ mode: 'onChange' });
 
-    const onSubmit: SubmitHandler<FormData> = (data) => console.log(data)
+    const onSubmit: SubmitHandler<FormData> = (data) => {
+        console.log(data)
+        // console.log(user.login())
+    }
 
     return (
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
